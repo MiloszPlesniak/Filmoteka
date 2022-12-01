@@ -1,0 +1,33 @@
+.buttons-pagination {
+  display: flex;
+  justify-content: center;
+  background-color: $bacgroundWhite;
+  margin-bottom: 40px;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: $bacgroundWhite;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    &:last-child {
+      background-color: $darkWhite;
+    }
+    &:first-child {
+      background-color: $darkWhite;
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+  &__icon {
+    width: 15px;
+    height: 12px;
+  }
+}

@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+.parcel-cache/8756d471127e5bd3
+.parcel-cache/9c54e29763d74955
+*.mdb

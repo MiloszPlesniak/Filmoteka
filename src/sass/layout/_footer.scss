@@ -1,0 +1,18 @@
+.footer {
+  background-color: $darkWhite;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 28px 20px 30px 20px;
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #545454;
+  }
+}
+@media screen and (min-width: $small) {
+  .footer__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

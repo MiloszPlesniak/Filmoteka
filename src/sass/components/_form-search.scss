@@ -1,0 +1,24 @@
+.form-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  &__input {
+    background-color: transparent;
+    border-bottom: 0.5px solid $clasicWhite;
+    width: 280px;
+    color: $clasicWhite;
+    position: relative;
+  }
+  &__icon {
+    position: relative;
+    left: -15px;
+  }
+}
+.error-search {
+  color: $errorRed;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 16px;
+}

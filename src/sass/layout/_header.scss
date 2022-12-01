@@ -1,0 +1,42 @@
+header {
+  background: url(../images/bacgroundheader.png) no-repeat;
+  background-size: cover;
+  // background-position-x: -80px;
+}
+.header {
+  padding: 46px 20px 54px 20px;
+  // height: 230px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__item {
+    color: $clasicWhite;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+  }
+  &__text {
+    font-size: 12px;
+
+    &--active {
+      border-bottom: 3px solid #ff6b08;
+    }
+
+    &:first-child {
+      margin-right: 39px;
+    }
+  }
+  &__tittle {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    padding-left: 12px;
+    // display: none;
+  }
+}

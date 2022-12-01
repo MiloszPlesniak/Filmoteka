@@ -1,0 +1,15 @@
+.container {
+  max-width: $small;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: $small) {
+  .container {
+    max-width: $big;
+  }
+}
+@media (min-width: $big) {
+  .container {
+    min-width: $big;
+  }
+}
