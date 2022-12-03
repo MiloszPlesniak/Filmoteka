@@ -1,0 +1,140 @@
+.modal-details {
+  min-width: 280px;
+  width: 85%;
+  background-color: $clasicWhite;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 45px 20px 45px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__photo-box {
+    width: 100%;
+  }
+  &__photo {
+    margin-top: 8px;
+    width: 100%;
+  }
+  &__details {
+    margin: 30px auto 21px;
+  }
+  &__about {
+    font-weight: 500;
+    font-size: 4vmin;
+    line-height: 5vmin;
+
+    &--paragraf {
+      line-height: 6vmin;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+.specification {
+  display: block;
+  margin: 0px auto;
+  &__tittle {
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 5vmin;
+    font-size: 5vmin;
+  }
+  &__option {
+    font-size: 4vmin;
+    color: #8c8c8c;
+    text-align: left;
+    padding-bottom: 3.2vmin;
+  }
+  &__rating {
+    font-size: 4vmin;
+    text-align: left;
+  }
+  &__rate {
+    background-color: $bacgroundWhite;
+    border-radius: 5px;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    margin-right: 0.5vmin;
+
+    &--color {
+      background-color: $orange;
+      color: $clasicWhite;
+      font-weight: 500;
+    }
+  }
+}
+@media (min-width: $small) {
+  .modal-details {
+    width: 81vw;
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__photo-box {
+      min-width: 264px;
+    }
+    &__photo {
+      width: 95%;
+    }
+    &__details {
+      margin: 0px;
+    }
+    &__about {
+      font-size: 1.8vw;
+
+      &--paragraf {
+        font-size: 1.57vw;
+        line-height: 2.7vw;
+        width: 264px;
+      }
+    }
+  }
+  .specification {
+    margin-bottom: 10px;
+    &__tittle {
+      padding-bottom: 2.6vw;
+      font-size: 2.3vw;
+      font-weight: 500;
+    }
+    &__option {
+      font-size: 1.6vw;
+      padding-bottom: 1.3vw;
+    }
+    &__rating {
+      font-size: 1.6vw;
+    }
+    &__rate {
+      padding-left: 0.5vw;
+      padding-right: 0.5vw;
+    }
+  }
+}
+@media (min-width: $big) {
+  .modal-details {
+    width: 65vw;
+    min-width: 882px;
+    &__photo {
+      width: 100%;
+    }
+    &__photo-box {
+      min-width: 396px;
+      width: 100%;
+      margin-right: 20px;
+    }
+    &__about--paragraf {
+      width: auto;
+    }
+  }
+}
